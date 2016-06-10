@@ -1,0 +1,12 @@
+<h1>Welcome to the Message Board</h1>
+
+If your have a question you want to ask the world fill out the new submission form and other users can post answers.
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+</ul>
+
+{{new-question addQuestion="addQuestion"}}
+
+{{#link-to 'about'}}About{{/link-to}}
